@@ -113,11 +113,11 @@
     font-weight: 400;
 ">Follow
 <style>
-media (min-width: 768px)
-follow-button::after {
+@media (min-width: 768px)
+.follow-button::after {
     position: static;
 }
-follow-button::after {
+.follow-button::after {
     border-left: 1px solid rgba(114, 137, 218, 1);
     content: attr(data-follower-count);
     color: rgba(114, 137, 218, 1);
@@ -126,7 +126,13 @@ follow-button::after {
     padding-left: 10px;
     position: absolute;
     right: 10px;
-	}</style>
+	}
+   .follow-button:hover, .follow-button:focus {
+    background-color: var(--primary-color);
+    background-image: -webkit-linear-gradient(45deg, var(--secondary-color) 15%, var(--primary-color) 65%);
+    background-image: linear-gradient(45deg, var(--secondary-color) 15%, var(--primary-color) 65%);
+    color: var(--primary-b-color);
+}</style>
 </follow-button></i></label></div>
                             <div class="col-75">
                             <textarea class="commentArea" disabled="" type="text" name="suggestabout" id="suggestabout" style="height:98px;overflow-y:hidden;">test</textarea>
