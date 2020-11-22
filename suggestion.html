@@ -104,13 +104,29 @@
     text-align: left!important;
     margin-left: 819px;
     display: inline-block;
-    border: 1px solid var(--primary-color);
     padding: 10px 25px;
-    /* background-color: var(--primary-color); */
+    background-color: var(--primary-color); 
     border-radius: 2px;
+    user-select: none;
+    white-space: nowrap;
+    transition: background-color .12s ease-in-out, border-color .12s ease-in-out, color .15s ease-in-out;
     font-weight: 400;
 ">Follow
-
+<style>
+media (min-width: 768px)
+follow-button::after {
+    position: static;
+}
+follow-button::after {
+    border-left: 1px solid rgba(114, 137, 218, 1);
+    content: attr(data-follower-count);
+    color: rgba(114, 137, 218, 1);
+    display: inline-block;
+    margin-left: 15px;
+    padding-left: 10px;
+    position: absolute;
+    right: 10px;
+	}</style>
 </follow-button></i></label></div>
                             <div class="col-75">
                             <textarea class="commentArea" disabled="" type="text" name="suggestabout" id="suggestabout" style="height:98px;overflow-y:hidden;">test</textarea>
@@ -121,7 +137,23 @@
                         <p>1 comment</p><hr class="divider">
                         
                             <div class="row">
-                                <div class="col-25"><label for="UserComment"><i style="color:white;font-weight: bold;font-family: 'Titillium Web';font-style: normal;"><img src="https://cdn.discordapp.com/avatars/493081244792520714/a_91e4c38752e5bce3f7a5aecebe3a34eb?size=128" alt="User Logo" style="border-radius: 50%;" width="30">&nbsp;&nbsp;Max.#0002 said:</i></label></div>
+                                <div class="col-25"><label for="UserComment"><i style="color:white;font-weight: bold;font-family: 'Titillium Web';font-style: normal;"><img src="https://cdn.discordapp.com/avatars/493081244792520714/a_91e4c38752e5bce3f7a5aecebe3a34eb?size=128" alt="User Logo" style="border-radius: 50%;" width="30">&nbsp;&nbsp;Max.#0002 said:<staff-lable style="
+    font-size: 12px;
+    font-weight: 500;
+    color: white;
+    line-height: 16px;
+    margin-bottom: 4px;
+    border-radius: 2px;
+    display: inline-block;
+    background-image: linear-gradient(45deg, var(--secondary-color) 39%, var(--primary-color) 99%);
+    margin-right: 0px;
+    text-overflow: ellipsis;
+    vertical-align: text-bottom;
+    white-space: pre;
+    word-break: normal;
+    margin-left: 13px;
+    padding: 0px 4px;
+">Staff reply</staff-lable></i></label></div>
                                 <div class="col-75">
                                 <textarea class="commentArea" disabled="" type="text" name="UserComment" id="UserComment" style="height:98px;overflow-y:hidden;">tes</textarea>
                             </div>
