@@ -105,22 +105,13 @@
     position: static;
 }
 	button {
-        background-color: transparent;
-    border: 1px solid rgba(114, 137, 218, 1);
-    border-radius: 4px;
-    color: rgba(114, 137, 218, 1);
-    cursor: pointer;
-    display: inline-block;
-    font-size: 12px;
-    line-height: 2.34;
-    margin: 0;
-    padding: 0 20px;
-    text-align: center;
-    transition: background-color .12s ease-in-out, border-color .12s ease-in-out, color .15s ease-in-out;
-    user-select: none;
-    white-space: nowrap;
-    width: 100%;
-    -webkit-touch-callout: none;
+        position: relative;
+    z-index: 2;
+    padding: 10px 25px;
+    background-color: var(--primary-color);
+    border-radius: 2px;
+    color: var(--primary-b-color);
+   	    font-weight: 400;
 	    margin-left: 819px;
 	
 }
