@@ -105,22 +105,31 @@
     position: static;
 }
 	button {
-    position: absolute;
-    z-index: 2;
-    text-align: left!important;
+        background-color: transparent;
+    border: 1px solid rgba(114, 137, 218, 1);
+    border-radius: 4px;
+    color: rgba(114, 137, 218, 1);
     cursor: pointer;
-    margin-left: 819px;
     display: inline-block;
-    padding: 10px 25px;
-    background-color: var(--primary-color); 
-    border-radius: 2px;
+    font-size: 12px;
+    line-height: 2.34;
+    margin: 0;
+    padding: 0 20px;
+    text-align: center;
+    transition: background-color .12s ease-in-out, border-color .12s ease-in-out, color .15s ease-in-out;
     user-select: none;
     white-space: nowrap;
-    color: var(--primary-b-color);
-    border: none;
-    transition: background-color .12s ease-in-out, border-color .12s ease-in-out, color .15s ease-in-out;
-    font-weight: 400;
+    width: 100%;
+    -webkit-touch-callout: none;
+	    margin-left: 819px;
+	
 }
+	.follow-button button {
+	    line-height: 30px;
+    padding: 0 10px 0 15px;
+    position: relative;
+    width: 100%;
+	}
 .follow-button::after {
     border-left: 1px solid rgba(114, 137, 218, 1);
     content: "1";
