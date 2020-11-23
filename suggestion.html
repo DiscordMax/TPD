@@ -104,10 +104,11 @@
 .follow-button::after {
     position: static;
 }
-	.follow-button {
+	.button {
     position: absolute;
     z-index: 2;
     text-align: left!important;
+    cursor: pointer;
     margin-left: 819px;
     display: inline-block;
     padding: 10px 25px;
@@ -115,6 +116,8 @@
     border-radius: 2px;
     user-select: none;
     white-space: nowrap;
+		color: var(--primary-b-color);
+		border: none;
     transition: background-color .12s ease-in-out, border-color .12s ease-in-out, color .15s ease-in-out;
     font-weight: 400;
 }
@@ -134,7 +137,7 @@
     background-image: linear-gradient(45deg, var(--secondary-color) 15%, var(--primary-color) 65%);
     color: var(--primary-b-color);
 }</style>
-</button></i></label></div>
+</div></i></label></div>
                             <div class="col-75">
                             <textarea class="commentArea" disabled="" type="text" name="suggestabout" id="suggestabout" style="height:98px;overflow-y:hidden;">test</textarea>
                             </div>
