@@ -969,8 +969,7 @@ header {
 }
 
 header .navbar-expand {
-    position: fixed;
-    top: 0;
+    background-color: #111111;
     z-index: 2;
     width: 100%;
     padding: 20px 25px;
@@ -978,15 +977,6 @@ header .navbar-expand {
 
 header .navbar-expand.relative {
     position: relative;
-}
-
-header .navbar-sticky {
-    top: 0;
-    background-color: var(--header-bg-color);
-    -webkit-box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
-    box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
-    -webkit-animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
-    animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
 }
 
 header .navbar-expand .navbar-nav.toggle {
@@ -2631,7 +2621,7 @@ footer .copyright p {
     z-index: 5;
     right: 25px;
     bottom: 25px;
-    opacity: 0.75;
+    opacity: 1;
     transition-timing-function: ease;
     transition-duration: .4s;
     transition-property: opacity, transform;
@@ -2651,7 +2641,7 @@ footer .copyright p {
     justify-content: center;
     border-radius: 100%;
     font-size: 22px;
-    background-color: var(--primary-bg-color-2);
+    background-color: #FF71BE;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
