@@ -2858,7 +2858,6 @@ footer .copyright p {
 
     body .full-slider .hero-image,
     body .no-slider .hero-image {
-        filter: grayscale(1);
         right: initial;
     }
 
