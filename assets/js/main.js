@@ -65,7 +65,7 @@ jQuery(function ($) {
 
     toTop.hide();
 
-    $(window).scroll(function () {
+   /* $(window).scroll(function () {
 
         let scroll = $(window).scrollTop();
         let navbar = $('.navbar');
@@ -116,7 +116,7 @@ jQuery(function ($) {
 
         }
     })
-
+*/
     $(document).on('click', '.smooth-anchor', function (event) {
 
         event.preventDefault();
