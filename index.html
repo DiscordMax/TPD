@@ -78,6 +78,46 @@
             --footer-bg-color: #24252A;
         }
     </style>
+    <style>
+    .mobileDepts {
+      gap: 0px;
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+}
+    @media(max-width: 990px) {
+        .mobileDepts {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+        }
+    }   
+    @media(max-width: 990px) {
+        .mobileTextP {
+        color: #dcd1d1;
+        margin: 1.5rem 0 0.5rem 0;
+        font-size: 12px;
+    }
+        }
+           .mobileTextP {
+        color: #dcd1d1;
+        margin: 1.5rem 0 0.5rem 0;
+        font-size: 14px;
+    }
+    @media(max-width: 990px) {        
+    .mobileH3 {
+    font-size: 1.7rem!important;
+    color: #fff;
+    }
+        }  
+        
+    .mobileH3 {
+    font-size: 2rem!important;
+    color: #fff;
+    }
+    </style>
 
 </head>
 
@@ -298,11 +338,7 @@
                     <p>We have many departments, which all offer extra roleplay opportunities. In each department, you will have the opportunity to apply, gain knowledge, and traverse your way through the many ranks offered to you. Join our <a href="https://discord.gg/znW8vn8U3W" target="_blank">Department Hub</a>.</p>
                 </div>
             </div>
-            <ul style="
-    gap: 0px;
-    grid-template-columns: 1fr 1fr;
-    display: grid;
-">
+            <ul class="mobileDepts">
                 <li style="
     list-style: none;
     grid-template-columns: 1fr 1fr;
@@ -393,9 +429,7 @@
     height: auto;
     /* border-radius: 100%; */
 " width="94" height="94"></figure>
-    <div><h3 style="
-    color: #fff;
-">Special Weapons and Tactics</h3><p style="
+    <div><h3 class="mobileH3">Special Weapons and Tactics</h3><p style="
     color: #dcd1d1;margin: 1.5rem 0 0.5rem 0;font-size: 14px;
 ">New Jersey Special Weapons and Tactics is a tactical police unit tasked with responding to high-risk felony calls, including hostage situations, active shooters and calls that local police simply cannot handle.
 </p>
@@ -404,11 +438,7 @@
 
 </div></li>
     </ul>
-                <ul style="
-    gap: 0px;
-    grid-template-columns: 1fr 1fr;
-    display: grid;
-">
+                <ul class="mobileDepts">
                 <li style="
     list-style: none;
     grid-template-columns: 1fr 1fr;
@@ -510,11 +540,7 @@
 
 </div></li>
     </ul>
-            <ul style="
-    gap: 0px;
-    grid-template-columns: 1fr 1fr;
-    display: grid;
-">
+            <ul class="mobileDepts">
                 <li style="
     list-style: none;
     grid-template-columns: 1fr 1fr;
@@ -634,7 +660,7 @@
                         <div class="gallery">
                                 <img src="https://cdn.discordapp.com/attachments/1011785789744615474/1095759363764924417/Screenshot_2023-04-12_131239.png" style="border-bottom: solid #56EDED;border-radius: 0px;border-top-right-radius: 12px;border-top-left-radius: 12px;"alt="NJRP Asset">
                         </div>
-                        <h4>Roleplay</h4>
+                        <h4 style="margin-top: 1.5rem;">Roleplay</h4>
                         <p>Highest class of RP folks</p>
                     </div>
                 </div>
@@ -643,7 +669,7 @@
                         <div class="gallery">
                                 <img src="https://cdn.discordapp.com/attachments/1011785789744615474/1095759362380804106/Screenshot_2023-03-26_184050.png" style="border-bottom: solid #56EDED;border-top-right-radius: 12px!important;border-radius: 0px;border-top-left-radius: 12px;"alt="NJRP Asset">
                         </div>
-                        <h4>Departments</h4>
+                        <h4 style="margin-top: 1.5rem;">Departments</h4>
                         <p>Highest class of departments folks</p>
                     </div>
                 </div>
@@ -652,7 +678,7 @@
                         <div class="gallery">
                                 <img src="https://cdn.discordapp.com/attachments/946562526122999868/1098429554386800792/Screenshot_2023-03-26_150335.png" style="border-bottom: solid #56EDED;border-radius: 0px;border-top-right-radius: 12px;border-top-left-radius: 12px;"alt="NJRP Asset">
                         </div>
-                        <h4>Engagement</h4>
+                        <h4 style="margin-top: 1.5rem;">Engagement</h4>
                         <p>Highest class of Engagement folks</p>
                     </div>
                 </div>
