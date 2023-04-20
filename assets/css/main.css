@@ -1874,6 +1874,7 @@ img.flags {
     right: 0;
     bottom: 0;
     left: 0;
+    background-color: inherit;
 }
 
 .odd:not(.custom) .card.featured:after {
