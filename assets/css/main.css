@@ -28,7 +28,7 @@ body {
     overflow-x: hidden;
     font-family: 'Titillium Web';
     color: var(--primary-p-color);
-    background-color: var(--primary-bg-color);
+    background-color: #111111;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
      -khtml-user-select: none;
