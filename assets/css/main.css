@@ -1861,6 +1861,7 @@ img.flags {
 .items .item:last-child .card.featured:before {
     right: -10px;
     bottom: -10px;
+    border-radius: 12px;
 }
 
 .card.featured:after {
