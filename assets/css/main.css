@@ -1547,7 +1547,7 @@ img.flags {
 
 .swiper-pagination-bullet {
     width: 40px;
-    height: 5px;
+    height: 25px;
     border-radius: 0;
     background-color: var(--primary-p-color);
     border: none;
@@ -2789,6 +2789,12 @@ footer .copyright p {
     display: none;
     padding-right: 0px;
     font-size: 4.5rem!important;	
+	}
+}	
+@media(max-width: 767px) {
+.swiper-pagination-bullet {
+    width: 34px;
+    border-radius: 25px;
 	}
 }	
 @media(max-width: 767px) {
