@@ -2751,7 +2751,7 @@ footer .copyright p {
 }
 @media (max-width: 767px) {
 .hero-image {
-    display: none;
+    display: none!important;
 }
 }
 @media(max-width: 991px) {
@@ -2787,8 +2787,7 @@ footer .copyright p {
 @media(max-width: 767px) {
 .swiper-slide .aos-animate {
     display: none;
-    padding-right: 0px;
-    font-size: 4.5rem!important;	
+    padding-right: 0px;	
 	}
 }	
 @media(max-width: 767px) {
