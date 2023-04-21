@@ -1866,7 +1866,7 @@ img.flags {
 
 .card.featured:after {
     position: absolute;
-    border-radius: 12px;
+    border-radius: 25px;
     z-index: -1;
     content: '';
     width: 100%;
