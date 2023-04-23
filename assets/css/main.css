@@ -2575,7 +2575,7 @@ footer .copyright p {
     border: none;
     border-radius: 0;
     overflow-x: hidden;
-    background-color: var(--primary-bg-color-2);
+    background-color: #191919;
 }
 
 .odd .modal-content {
