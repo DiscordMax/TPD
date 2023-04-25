@@ -2753,7 +2753,7 @@ footer .copyright p {
     }
 }
 
-	@media (max-width: 767px) {
+	@media (max-width: 1198px) {
 		.hero-image {
     			display: none!important;
 		}
