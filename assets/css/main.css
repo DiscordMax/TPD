@@ -1231,7 +1231,7 @@ header .navbar-expand .navbar-brand img {
     font-size: 1.5rem;
     font-weight: 600;
     border: none;
-    color: var(--primary-t-color);
+    color: #f2f2f2;
 }
 
 .odd .menu .nav-link:first-child {
@@ -2589,6 +2589,7 @@ footer .copyright p {
 .modal-header {
     align-items: center;
     padding: 25px;
+    font-size: 21px;
     border: none;
     font-weight: 600;
     color: #ffffff;
