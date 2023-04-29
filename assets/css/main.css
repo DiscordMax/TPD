@@ -2065,10 +2065,10 @@ img.flags {
 
 .hero-image {
     position: absolute;
-    right: 0%;
-    bottom: 0;
+    right: 8%;
+    bottom: 9%;
     width: auto;
-    height: 85%;
+    height: 81%;
 }
 
 .fit-image {
