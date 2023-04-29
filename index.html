@@ -355,7 +355,6 @@
 }
 .staffcount {
   animation: counter 5s infinite alternate ease-in-out;
-  counter-reset: num var(--num);
 }
 .staffcount::after {
   content: counter(num);
@@ -739,7 +738,7 @@
                 <div class="col-12 col-md-6 col-lg-4 item">
                     <div class="card no-hover">
                         <i class="icon fa fa-layer-group"></i>
-                        <h4><div class="staffcount">100</div>+ Custom Game Assets</h4>
+                        <h4 style="display: flex;"><div class="staffcount"></div>+ Custom Game Assets</h4>
                         <p>A dedicated team to creating custom liveries and uniforms.</p>
                     </div>
                 </div>
