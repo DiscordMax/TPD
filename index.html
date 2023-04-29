@@ -246,15 +246,21 @@
         min-height: 27rem;
     }
 }    
+@media (max-width: 1172px) {        
 .gradient-cards {
-    display: flex;
+    display: flex!important;
     gap: 32px;
-    padding: 20px; 
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
+    padding: 15px!important; 
+    justify-content: center!important;
+    align-content: center!important;
+    flex-wrap: wrap!important;
 }
-        
+ .gradient-cards {
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 32px;
+    padding: 20px;
+ }
 .fa-user-pen:before {
     content: "\f4ff"
 }
