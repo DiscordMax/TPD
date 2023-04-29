@@ -347,7 +347,29 @@
 .bg-blue-box::after {
   background: linear-gradient(71deg, #0c0a0e, #5f6fad, #0c0a0e);
 }
+        
+@property --num {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+.staffcount {
+  animation: counter 5s infinite alternate ease-in-out;
+  counter-reset: num var(--num);
+}
+.staffcount::after {
+  content: counter(num);
+}
 
+@keyframes counter {
+  from {
+    --num: 0;
+  }
+  to {
+    --num: 100;
+  }
+}
+        
 .cardy-title {
   font-weight: 600;
   color: white;
@@ -717,7 +739,7 @@
                 <div class="col-12 col-md-6 col-lg-4 item">
                     <div class="card no-hover">
                         <i class="icon fa fa-layer-group"></i>
-                        <h4>100+ Custom Game Assets</h4>
+                        <h4><div class="staffcount">100</div>+ Custom Game Assets</h4>
                         <p>A dedicated team to creating custom liveries and uniforms.</p>
                     </div>
                 </div>
@@ -943,6 +965,4 @@
     <script src="assets/js/vendor/animation.min.js"></script>
     <script src="../kit.fontawesome.com/86323babb4.js" crossorigin="anonymous"></script>
     <script src="assets/js/main.js"></script>
-</body>
-
 </html>
