@@ -235,7 +235,11 @@
     width: auto !important;
   }
 }
-
+@media (max-width: 991px) {
+    .containery-card {
+        min-height: 29rem;
+    }
+}    
 .gradient-cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -270,6 +274,7 @@
 .containery-card {
   position: relative;
   background: #191919;
+  min-height: 24rem;
   background-clip: padding-box;
   border-radius: 23px;
   padding: 40px;
@@ -278,6 +283,7 @@
   }
 }
 
+       
 .bg-green-box,
 .bg-white-box,
 .bg-yellow-box,
