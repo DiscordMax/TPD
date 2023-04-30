@@ -374,30 +374,28 @@
         transition: all 0.1s ease 0.5s;
         visibility: visible;
       }
-      [data-title]:after {
-        content: attr(data-title);
-        position: absolute;
-        bottom: -1.6em;
-        left: 100%;
-        padding: 4px 4px 4px 8px;
-        color: #666;
-        white-space: nowrap;
-        -moz-border-radius: 5px;
-        -webkit-border-radius: 5px;
-        border-radius: 5px;
-        -moz-box-shadow: 0px 0px 4px #666;
-        -webkit-box-shadow: 0px 0px 4px #666;
-        box-shadow: 0px 0px 4px #666;
-        background-image: -moz-linear-gradient(top, #f0eded, #bfbdbd);
-        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f0eded), color-stop(1, #bfbdbd));
-        background-image: -webkit-linear-gradient(top, #f0eded, #bfbdbd);
-        background-image: -moz-linear-gradient(top, #f0eded, #bfbdbd);
-        background-image: -ms-linear-gradient(top, #f0eded, #bfbdbd);
-        background-image: -o-linear-gradient(top, #f0eded, #bfbdbd);
-        opacity: 0;
-        z-index: 99999;
-        visibility: hidden;
-      }
+[data-title]:after {
+    content: attr(data-title);
+    position: absolute;
+    font-size: 12px;
+    bottom: -1.6em;
+    left: 100%;
+    padding: 4px 8px 4px 8px;
+    color: #ffffff;
+    white-space: nowrap;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    -moz-box-shadow: 0px 0px 4px #666;
+    -webkit-box-shadow: 0px 0px 4px #666;
+    background: #111111;
+    box-shadow: 0px 0px 4px #000000;
+    background-image: -moz-linear-gradient(top, #f0eded, #bfbdbd);
+    background-image: linear-gradient(to bottom, transparent 83%, var(--primary-color) 83%, var(--primary-color) 100%) 30;
+    opacity: 0;
+    z-index: 99999;
+    visibility: hidden;
+}
       [data-title] {
         position: relative;
       }
@@ -690,8 +688,8 @@
       <div class="containery-card">
           <img width="80" height="80" viewBox="0 0 120 120" src="https://cdn.discordapp.com/icons/906662253854605322/60e22a8a2ec8957d0fd1408358c1ad3b.png?size=512">
         <p class="mobileH3 cardy-title">Special Weapons and Tactics
-            <a href="https://discord.gg/invite/vYTg3a8Vww" target="_blank" class="cardy-icons1" title="SWAT Discord Server"><i class="fab fa-discord" style="color: var(--primary-color);"></i></a>
-            <a href="https://forms.gle/mY5ucLigtnWxoNWE9" target="_blank" class="cardy-icons2" title="SWAT Application"><i class="fa fa-user-pen" style="color: var(--primary-color);"></i></a>
+            <a href="https://discord.gg/invite/vYTg3a8Vww" target="_blank" class="cardy-icons1" data-title="SWAT Discord Server"><i class="fab fa-discord" style="color: var(--primary-color);"></i></a>
+            <a href="https://forms.gle/mY5ucLigtnWxoNWE9" target="_blank" class="cardy-icons2" data-title="SWAT Application"><i class="fa fa-user-pen" style="color: var(--primary-color);"></i></a>
           </p>
         <p class="cardy-description">New Jersey Special Weapons and Tactics is a tactical police unit tasked with responding to high-risk felony calls, including hostage situations, active shooters and calls that local police simply cannot handle.</p>
       </div>
@@ -701,8 +699,8 @@
       <div class="containery-card">
           <img width="80" height="80" viewBox="0 0 120 120" src="https://cdn.discordapp.com/emojis/957719517952344104.png?v=1">
         <p class="mobileH3 cardy-title">Mercer County Sheriffs Office
-            <a href="https://discord.gg/invite/eV4Bza8ceb" target="_blank" class="cardy-icons1" title="MCSO Discord Server"><i class="fab fa-discord" style="color: var(--primary-color);"></i></a>
-            <a href="https://forms.gle/vtw92JVnGePCEgZg9" target="_blank" class="cardy-icons2" title="MCSO Application"><i class="fa fa-user-pen" style="color: var(--primary-color);"></i></a>
+            <a href="https://discord.gg/invite/eV4Bza8ceb" target="_blank" class="cardy-icons1" data-title="MCSO Discord Server"><i class="fab fa-discord" style="color: var(--primary-color);"></i></a>
+            <a href="https://forms.gle/vtw92JVnGePCEgZg9" target="_blank" class="cardy-icons2" data-title="MCSO Application"><i class="fa fa-user-pen" style="color: var(--primary-color);"></i></a>
           </p>
         <p class="cardy-description">Here at Mercer County Sheriff's Office, we strive to be able to become one of the best Law Enforcement agencies out there! If you are looking to become a patrol officer in the county, you've stopped at a great place.</p>
       </div>
@@ -713,8 +711,8 @@
       <div class="containery-card">
           <img width="80" height="80" viewBox="0 0 120 120" src="https://cdn.discordapp.com/emojis/957714788618747975.png?v=1">
         <p class="mobileH3 cardy-title">Trenton Fire Department
-            <a href="https://discord.gg/invite/7kgStQW7UW" target="_blank" class="cardy-icons1" title="TFD Discord Server"><i class="fab fa-discord" style="color: var(--primary-color);"></i></a>
-            <a href="https://forms.gle/xzozGuSHBMjGpvxM8" target="_blank" class="cardy-icons2" title="TFD Application"><i class="fa fa-user-pen" style="color: var(--primary-color);"></i></a>
+            <a href="https://discord.gg/invite/7kgStQW7UW" target="_blank" class="cardy-icons1" data-title="TFD Discord Server"><i class="fab fa-discord" style="color: var(--primary-color);"></i></a>
+            <a href="https://forms.gle/xzozGuSHBMjGpvxM8" target="_blank" class="cardy-icons2" data-title="TFD Application"><i class="fa fa-user-pen" style="color: var(--primary-color);"></i></a>
           </p>
         <p class="cardy-description">Trenton Fire and Rescue aim to provide medical care, and fire rescue services. Their goal is to ensure the safety and well-being of Trenton's residents at all times.</p>
       </div>
@@ -723,8 +721,8 @@
       <div class="mobileH3 containery-card">
           <img width="80" height="80" viewBox="0 0 120 120" src="https://cdn.discordapp.com/attachments/1076031260146806794/1076033522118172723/Seal_of_the_New_Jersey_Department_of_Transportation.svg.png">
         <p class="cardy-title">Department of Transportation
-            <a href="https://discord.gg/invite/kHKF2u6hNv" target="_blank" class="cardy-icons1" title="DOT Discord Server"><i class="fab fa-discord" style="color: var(--primary-color);"></i></a>
-            <a href="https://forms.gle/RBoaAjU1aM5Ei5sS7" target="_blank" class="cardy-icons2" title="DOT Application"><i class="fa fa-user-pen" style="color: var(--primary-color);"></i></a>
+            <a href="https://discord.gg/invite/kHKF2u6hNv" target="_blank" class="cardy-icons1" data-title="DOT Discord Server"><i class="fab fa-discord" style="color: var(--primary-color);"></i></a>
+            <a href="https://forms.gle/RBoaAjU1aM5Ei5sS7" target="_blank" class="cardy-icons2" data-title="DOT Application"><i class="fa fa-user-pen" style="color: var(--primary-color);"></i></a>
           </p>
         <p class="cardy-description">Welcome to the Department of Transportation. We offer a variety of ranks and hard workers who strive to help others out within the community. If you like to change tires, tow cars, and more... apply today!</p>
       </div>
@@ -733,8 +731,8 @@
       <div class="containery-card">
           <img width="80" height="80" viewBox="0 0 120 120" style="border-radius: 13px;" src="https://cdn.discordapp.com/icons/1080566399329648702/356de278e074598f9bfb465bddf29028.png?size=512">
         <p class="mobileH3 cardy-title">Jersey's Mafia's
-            <a href="https://discord.gg/invite/K4yy7kMKk8" target="_blank" class="cardy-icons1" style="margin-left: 12px!important;margin-top: 0px!important;font-size: 24px;"title="Mafia's Discord Server"><i class="fab fa-discord" style="color: var(--primary-color);"></i></a>
-            <a href="https://forms.gle/MwF9pdt9Fm2bUWxZA" target="_blank" class="cardy-icons2" style="margin-top: 0px!important;font-size: 24px;" title="Mafia's Application"><i class="fa fa-user-pen" style="color: var(--primary-color);"></i></a>
+            <a href="https://discord.gg/invite/K4yy7kMKk8" target="_blank" class="cardy-icons1" data-style="margin-left: 12px!important;margin-top: 0px!important;font-size: 24px;"title="Mafia's Discord Server"><i class="fab fa-discord" style="color: var(--primary-color);"></i></a>
+            <a href="https://forms.gle/MwF9pdt9Fm2bUWxZA" target="_blank" class="cardy-icons2" data-style="margin-top: 0px!important;font-size: 24px;" title="Mafia's Application"><i class="fa fa-user-pen" style="color: var(--primary-color);"></i></a>
           </p>
         <p class="cardy-description">Welcome to Jersey's Mafias, our only criminal department. Within this department, you can join several different teams and work to get money as you go across the server doing various tasks, assigned by your higher-ups!</p>
       </div>
