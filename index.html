@@ -369,7 +369,38 @@
     --num: 100;
   }
 }
-        
+        [data-title]:hover:after {
+        opacity: 1;
+        transition: all 0.1s ease 0.5s;
+        visibility: visible;
+      }
+      [data-title]:after {
+        content: attr(data-title);
+        position: absolute;
+        bottom: -1.6em;
+        left: 100%;
+        padding: 4px 4px 4px 8px;
+        color: #666;
+        white-space: nowrap;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        -moz-box-shadow: 0px 0px 4px #666;
+        -webkit-box-shadow: 0px 0px 4px #666;
+        box-shadow: 0px 0px 4px #666;
+        background-image: -moz-linear-gradient(top, #f0eded, #bfbdbd);
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f0eded), color-stop(1, #bfbdbd));
+        background-image: -webkit-linear-gradient(top, #f0eded, #bfbdbd);
+        background-image: -moz-linear-gradient(top, #f0eded, #bfbdbd);
+        background-image: -ms-linear-gradient(top, #f0eded, #bfbdbd);
+        background-image: -o-linear-gradient(top, #f0eded, #bfbdbd);
+        opacity: 0;
+        z-index: 99999;
+        visibility: hidden;
+      }
+      [data-title] {
+        position: relative;
+      }
 .cardy-title {
   font-weight: 600;
   color: white;
@@ -648,8 +679,8 @@
       <div class="containery-card">
           <img width="80" height="80" viewBox="0 0 120 120" src="https://cdn.discordapp.com/attachments/1076031260146806794/1076031577928253520/1066830094913519637.png">
           <p class="mobileH3 cardy-title">Trenton Police Department
-            <a href="https://discord.gg/tpd" target="_blank" class="cardy-icons1" title="TPD Discord Server"><i class="fab fa-discord" style="color: var(--primary-color);"></i></a>
-            <a href="https://forms.gle/GpVNNskxBityTjuH8" target="_blank" class="cardy-icons2" title="TPD Application"><i class="fa fa-user-pen" style="color: var(--primary-color);"></i></a>
+            <a href="https://discord.gg/tpd" target="_blank" class="cardy-icons1" data-title="TPD Discord Server"><i class="fab fa-discord" style="color: var(--primary-color);"></i></a>
+            <a href="https://forms.gle/GpVNNskxBityTjuH8" target="_blank" class="cardy-icons2" data-title="TPD Application"><i class="fa fa-user-pen" style="color: var(--primary-color);"></i></a>
           </p>
         <p class="cardy-description">Trenton Police Department's goal is to maintain a stable functioning community within Trenton. They vow to protect Trenton and its community. They offer a variety of subdivisions as-well as high quality and realistic roleplay.</p>
       </div>
