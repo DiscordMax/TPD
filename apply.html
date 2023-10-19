@@ -1,1 +1,802 @@
-ap
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="windows-1252">
+    <!-- ==============================================
+        Basic Page Needs
+        =============================================== -->
+
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
+                <meta name="theme-color" content="#A400FF" />
+    <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
+
+    <title>NJRP | Portal</title>
+    <meta name="theme-color" content="#A400FF">
+    <meta property="og:type" content="website" />
+    <meta property="og:author" content="New Jersey State Roleplay" />
+    <meta content="New Jersey State Roleplay aims for realism and professionalism within our server. We are one of the largest and most active ERLC communities." name="description" />
+    <meta content="NJRP | Portal" property="og:title" />
+    <meta data-n-head="ssr" data-hid="og:site_name" name="og:site_name" content="New Jersey State Roleplay">
+    <meta content="New Jersey State Roleplay aims for realism and professionalism within our server. We are one of the largest and most active ERLC communities. " property="og:description" />
+    <meta property="og:image" content="https://cdn.discordapp.com/attachments/869607356433051688/1157707123866751068/njrp_logo.png" />
+    <meta property="og:image:width" content="307" />
+    <meta property="og:image:height" content="307" />
+    <meta property="og:type" content="portal, website, information" />
+    <meta property="og:url" content="https://njroleplay.com" />
+    <meta property="og:locale" content="en_US" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- ==============================================
+        Favicons
+        =============================================== -->
+    <link rel="shortcut icon" href="assets/images/njrp-logo-fall.png">
+    <link rel="apple-touch-icon" href="assets/images/njrp-logo-fall.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/njrp-logo-fall.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/njrp-logo-fall.png">
+
+    <!-- ==============================================
+        Vendor Stylesheet
+        =============================================== -->
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/slider.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/vendor/icons.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/gallery.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/animation.min.css">
+    <link rel="stylesheet" href="assets/css/default.css">
+    <link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all" rel="stylesheet">
+    <link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all" rel="stylesheet">
+    <link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" rel="stylesheet">
+
+    <!-- ==============================================
+        Page Settings
+        =============================================== -->
+    <style>
+        :root {
+            --header-bg-color: #111111;
+            --nav-item-color: #ffffff;
+            --hero-bg-color: #111111;
+
+            --section-1-bg-color: #111111;
+            --section-2-bg-color: #111111;
+            --section-3-bg-color: #111111;
+            --section-4-bg-color: #111111;
+            --section-5-bg-color: #111111;
+            --section-6-bg-color: #111111;
+            --section-7-bg-color: #111111;
+            --section-8-bg-color: #111111;
+            --section-9-bg-color: #111111;
+            --section-10-bg-color: #111111;
+            --section-11-bg-color: #111111;
+            --footer-bg-color: #24252A;
+        }
+    </style>
+    <style>
+    .mobileDepts {
+      gap: 0px;
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+}
+    @media(max-width: 990px) {
+        .mobileDepts {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+        }
+    }   
+    @media(max-width: 990px) {
+        .mobileTextP {
+        color: #dcd1d1;
+        margin: 1.5rem 0 0.5rem 0;
+        font-size: 12px;
+    }
+        }
+           .mobileTextP {
+        color: #dcd1d1;
+        margin: 1.5rem 0 0.5rem 0;
+        font-size: 14px;
+    }
+    @media(max-width: 990px) {        
+    .mobileH3 {
+    font-size: 1.7rem!important;
+    color: #fff;
+    }
+        }  
+        }  
+    .mobileH3 {
+    font-size: 28px!important;
+    color: #fff;
+    }
+     @media(max-width: 485px) {        
+    .mobileH3 {
+    font-size: 24px!important;
+    color: #fff;
+    }
+        }  
+        @media (min-width: 990px) {
+.col-md-6 {
+    margin-bottom: 30px!important;
+}
+        }
+
+@media (max-width: 766px) {
+    body .slider-h-100 {
+    width: 100%;
+    height: calc(100vh - 122px)!important;
+    }
+} 
+        .firstSlide {
+            font-size: 5.6rem;
+            padding-right: 32px;
+        } 
+        @media (max-width: 766px) {
+        .firstSlide {
+            font-size: 4.1rem!important;
+            padding-right: 0px!important;
+        } 
+} 
+        .secondSlide {
+            font-size: 4.9rem;
+        } 
+        @media (max-width: 766px) {
+        .secondSlide {
+            font-size: 4.1rem!important;
+            padding-right: 0px!important;
+        } 
+}         
+        .thirdSlide {
+            font-size: 5.5rem;
+            padding-right: 13px;
+        } 
+        @media (max-width: 766px) {
+        .thirdSlide {
+            font-size: 4.5rem!important;
+            padding-right: 0px!important;
+        } 
+}
+        .dark-button:after {
+            background-color: #111111;
+        }
+        .newrCard {
+    padding: 20px;
+    min-height: 20rem;
+    border-radius: 41px;
+    gap: 22px;
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)!important;
+    margin: 22px;
+    background-color: #191919;
+    max-height: 111rem;
+    justify-content: center;
+    backdrop-filter: blur(22px);
+    align-items: center;
+    align-content: center;
+}
+    @media(max-width: 485px) {       
+    .newrCard {
+    padding: 20px;
+    min-height: 20rem;
+    border-radius: 41px;
+    gap: 17px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)!important;
+    display: flex;
+    margin: 22px 0px 22px 22px;
+    background-color: #191919;
+    max-height: 111rem;
+    justify-content: center;
+    backdrop-filter: blur(22px);
+    align-items: center;
+    align-content: center;
+    }
+        }
+        @media (max-width: 766px) {
+        .dark-button, .dark-button:visited, .dark-button:active {
+           padding: 10px 9px 10px 9px!Important;
+        }
+    }
+    @media (max-width: 1198px) {
+    .full-slider .inner .left, .no-slider .inner .left {
+        width: 100%;
+        padding: 2rem 0;
+    }
+    }   
+@media (min-width: 1198px)
+.ml-md-0, .mx-md-0 {
+    margin-left: 0!important; 
+}
+.containery {
+  width: 1200px !important;
+  padding: 0 !important;
+  margin-right: auto;  
+  min-height: 24rem;
+  margin-left: auto;
+
+  @media (min-width: 992px) {
+    max-width: 1279px !important;
+    padding: 0 !important;
+    min-height: 24rem!important;
+    margin: 0 80px !important;
+    width: auto !important;
+  }
+
+  @media (max-width: 991px) {
+    max-width: 959px !important;
+    margin: 0 16px !important;
+    min-height: 29rem!important;
+    padding: 0 !important;
+    width: auto !important;
+  }
+}
+@media (max-width: 991px) {
+    .containery-card {
+        min-height: 29rem;
+    }
+}    
+        
+@media (max-width: 1133px) {
+    .containery-card {
+        min-height: 27rem;
+    }
+}    
+@media (max-width: 1172px) {        
+.gradient-cards {
+    display: flex!important;
+    gap: 32px;
+    padding: 10px!important; 
+    justify-content: center!important;
+    align-content: center!important;
+    flex-wrap: wrap!important;
+}
+        }    
+ .gradient-cards {
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 32px;
+    padding: 20px;
+ }
+.fa-user-pen:before {
+    content: "\f4ff"
+}
+        
+.containery-title {
+  text-align: center;
+  padding: 0 !important;
+  margin-bottom: 40px;
+  font-size: 40px;
+  color: #fff;
+  font-weight: 600;
+  line-height: 60px;
+}
+
+.cardy {
+  max-width: 550px;
+  border: 0;
+  width: 100%;
+  margin-inline: auto;
+}
+
+.containery-card {
+  position: relative;
+  background: #191919;
+  min-height: 24rem;
+  background-clip: padding-box;
+  border-radius: 23px;
+  padding: 40px;
+  img {
+    margin-bottom: 32px;
+  }
+}
+
+       
+.bg-green-box,
+.bg-white-box,
+.bg-yellow-box,
+.bg-blue-box {
+  position: relative;
+}
+
+.bg-green-box::after,
+.bg-white-box::after,
+.bg-yellow-box::after,
+.bg-blue-box::after {
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  content: "";
+  z-index: -1;
+  border-radius: 45px;
+}
+
+  @media (max-width: 1078px) {
+  .cardy-title {
+  font-weight: 600;
+  color: white;
+  letter-spacing: -0.02em;
+  line-height: 40px;
+  display: flex;
+  font-style: normal;
+  font-size: 28px;
+  padding-bottom: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+        }      
+.bg-green-box::after {
+  background: linear-gradient(71deg, #0d1212, #3da077, #0d1212);
+}
+
+.bg-white-box::after {
+  background: linear-gradient(71deg, #121013, #b0afb0, #121013);
+}
+
+.bg-yellow-box::after {
+  background: linear-gradient(71deg, #110e0e, #afa220, #110e0e);
+}
+
+.bg-blue-box::after {
+  background: linear-gradient(71deg, #0c0a0e, #5f6fad, #0c0a0e);
+}
+        
+@property --num {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+.staffcount {
+  animation: counter 5s infinite alternate ease-in-out;
+}
+.staffcount::after {
+  content: counter(num);
+}
+
+@keyframes counter {
+  from {
+    --num: 0;
+  }
+  to {
+    --num: 100;
+  }
+}
+        [data-title]:hover:after {
+        opacity: 1;
+        transition: all 0.1s ease 0.5s;
+        visibility: visible;
+      }
+[data-title]:after {
+    content: attr(data-title);
+    position: absolute;
+    font-size: 12px;
+    bottom: -1.6em;
+    left: 100%;
+    padding: 4px 8px 4px 8px;
+    color: #ffffff;
+    white-space: nowrap;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    -moz-box-shadow: 0px 0px 4px #666;
+    -webkit-box-shadow: 0px 0px 4px #666;
+    background: #111111;
+    box-shadow: 0px 0px 4px #000000;
+    background-image: -moz-linear-gradient(top, #f0eded, #bfbdbd);
+    background-image: linear-gradient(to bottom, transparent 83%, var(--primary-color) 83%, var(--primary-color) 100%) 30;
+    opacity: 0;
+    z-index: 99999;
+    visibility: hidden;
+}
+      [data-title] {
+        position: relative;
+      }
+.cardy-title {
+  font-weight: 600;
+  color: white;
+  letter-spacing: -0.02em;
+  line-height: 40px;
+  display: flex;
+  font-style: normal;
+  font-size: 28px;
+  padding-bottom: 8px;
+  align-items: center;
+}
+            @media (max-width: 991px) {
+    .cardy-icons2 {
+    margin-top: 13px!important;
+    font-size: 24px!important;
+    }
+    }   
+    @media (max-width: 991px) {
+    .cardy-icons1 {
+    margin-top: 13px!important;
+    font-size: 24px!important;
+    margin-left: 0px!important;
+    }
+    }     
+    .cardy-icons1 {
+        margin-left: 12px;
+        font-size: 27px!important;
+    }
+        .cardy-icons2 {
+        margin-left: 16px!important;
+        font-size: 27px!important;
+        }
+.cardy-description {
+  font-weight: 600;
+  line-height: 32px;
+  color: hsla(0, 0%, 100%, 0.5);
+  font-size: 16px;
+  max-width: 470px;
+}
+
+    </style>
+
+</head>
+
+<body>
+    
+    <!-- Header -->
+    <header>
+
+        <!-- Navbar -->
+        <nav data-aos="zoom-out" data-aos-delay="800" class="navbar navbar-expand">
+            <div class="container header">
+
+                <!-- Navbar Brand-->
+                <a href="https://discord.gg/njrp">
+
+                    <img src="assets/images/njrp-5.png" alt="NJRP Asset" width="130">
+
+                </a>
+
+                <!-- Navbar Items -->
+                <ul class="navbar-nav items ml-auto">
+                    <li class="nav-item">
+                        <a href="#slider" class="nav-link smooth-anchor">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#community" class="nav-link smooth-anchor">Community</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link smooth-anchor">Info</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#depts" class="nav-link smooth-anchor">Departments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#team" class="nav-link smooth-anchor">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contacts" class="nav-link smooth-anchor">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- Navbar Icons -->
+                <ul class="navbar-nav icons ml-auto m-xl-0">
+                    <li class="nav-item social">
+                        <a href="https://policeroleplay.community/join/NJersey" class="nav-link" target="_blank"><i
+                                class="icon-game-controller" style="transform: rotate(45deg) translate3d(4px, 2px, 0px);"></i></a>
+                    </li>
+                </ul>
+
+                <!-- Navbar Toggle -->
+                <ul class="navbar-nav toggle">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-toggle="modal" data-target="#menu">
+                            <i class="icon-menu m-0"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Navbar Action -->
+                <ul class="navbar-nav action">
+                    <li class="nav-item ml-3">
+                        <a href="https://discord.gg/njrp" target="_blank"
+                            class="btn ml-lg-auto primary-button"><i class="fab fa-discord"></i>Discord</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+ <!-- Community -->
+    <section id="community" class="odd offers secondary featured right">
+        <div class="container">
+            <div class="row intro">
+                <div class="col-12 col-md-9 align-self-center text-center text-md-left">
+                    <h2 class="featured">Our Community</h2>
+                    <p>NJRP is one of the highest rated ER:LC communities. See what we are all about.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center text-center items">
+                <div class="col-12 col-md-6 col-lg-4 item">
+                    <div class="card featured" style="padding: 0px;min-height: 26rem;border-radius: 12px;">
+                        <div class="gallery">
+                                <img src="https://cdn.discordapp.com/attachments/1005975809619673168/1101933106849661100/Screenshot_2023-03-12_164255.png" style="border-bottom: solid var(--primary-color);border-radius: 0px;border-top-right-radius: 12px;border-top-left-radius: 12px;"alt="NJRP Asset">
+                        </div>
+                        <h4 style="margin-top: 1.5rem;">Roleplay</h4>
+                        <p style="margin-right: 1rem; margin-left: 1rem;">New Jersey State Roleplay offers users a realistic and enhanced roleplay experience along with great moderation. With daily server startups users will be able to join in and have fun every day!</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 item">
+                    <div class="card" style="padding: 0px;min-height: 26rem;border-radius: 12px;">
+                        <div class="gallery">
+                                <img src="https://cdn.discordapp.com/attachments/870140702032547850/1140461255409287320/Screenshot_2023-08-06_212209.png" style="border-bottom: solid var(--primary-color);border-top-right-radius: 12px!important;border-radius: 0px;border-top-left-radius: 12px;"alt="NJRP Asset">
+                        </div>
+                        <h4 style="margin-top: 1.5rem;">Departments</h4>
+                        <p style="margin-right: 1rem; margin-left: 1rem;">We have many departments, which all offer extra roleplay opportunities. In each department, you will have the opportunity to apply, gain knowledge, and traverse your way through the many ranks offered to you.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 item">
+                    <div class="card featured" style="padding: 0px;min-height: 26rem;border-radius: 12px;">
+                        <div class="gallery">
+                                <img src="https://cdn.discordapp.com/attachments/946562526122999868/1098429554386800792/Screenshot_2023-03-26_150335.png" style="border-bottom: solid var(--primary-color);border-radius: 0px;border-top-right-radius: 12px;border-top-left-radius: 12px;"alt="NJRP Asset">
+                        </div>
+                        <h4 style="margin-top: 1.5rem;">Engagement</h4>
+                        <p style="margin-right: 1rem; margin-left: 1rem;">We provide users with an active chat to interact with fellow users, host daily giveaways, and events. Our friendly community welcomes everyone from anywhere. Come be apart of our community today!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About us [image] -->
+    <section id="about" class="odd highlights image-right featured left">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 align-self-center text-center text-md-left">
+                    <div class="row intro">
+                        <div class="col-12 p-0">
+                            <h2 class="featured alt">Information</h2>
+                            <p>We are New Jersey State Roleplay, a community based on the game Emergency Response: Liberty County within ROBLOX. We offer enhanced and fun roleplay experience within our server sessions. <a href="https://discord.gg/njrp" target="_blank"
+                                    class="colored">Join our Discord</a>.</p>
+                        </div>
+                    </div>
+                    <div class="row items">
+                        <div class="col-12 p-0">
+                            <div data-aos="fade-right" data-aos-delay="100" class="row item">
+                                <div class="col-12 col-md-2 align-self-center">
+                                    <i class="icon fa fa-question"></i>
+                                </div>
+                                <div class="col-12 col-md-9 align-self-center">
+                                    <h4>Why should I play NJRP?</h4>
+                                    <p>New Jersey State Roleplay aims for realism and professionalism within our server. 
+                                        
+
+                                        <br><br> - We are one of the largest and most active ERLC communities. 
+                                        We offer custom liveries, daily server startups, professional & trained staff team, variety of departments, active discord server, booster perks, events, giveaways, and more! 
+
+                                        <br><br> - Sessions will be hosted at their scheduled times daily. 
+                                        The server will stay up as long as Staff are available to Moderate.</p>
+                                </div>
+                            </div>
+                            <div data-aos="fade-right" data-aos-delay="200" class="row item">
+                                <div class="col-12 col-md-2 align-self-center">
+                                    <i class="icon fa fa-link"></i>
+                                </div>
+                                <div class="col-12 col-md-9 align-self-center">
+                                    <h4>Our Links</h4>
+                                    <p><a href="https://discord.gg/njrp" target="_blank">Discord</a>
+                                        <br><a href="http://apply.njroleplay.com/staff" target="_blank">Game Staff Application</a>
+                                        <br><a href="https://www.roblox.com/groups/10049304/NJRP-New-Jersey-State-Roleplay-Official-Group#!/about" target="_blank">Our Group</a>
+                                        <br><a href="https://discord.gg/FRMXjmZB67" target="_blank">Game Appeal</a><br><a href="https://banappeal.gg/njrp">Discord Appeal</a>
+                                        <br><a href="https://discord.com/channels/822491206231261225/834307949475528714" target="_blank">Staff Feedback Form</a>
+                                        <br><a href="https://discord.com/channels/822491206231261225/831912642746384424" target="_blank">Staff Report</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery col-12 col-md-6">
+                        <img src="https://cdn.discordapp.com/attachments/1011785789744615474/1143293546447765584/Screenshot_2023-08-21_162438.png" style="border-radius:23px;"class="fit-image" alt="Fit Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NJRP [Depts] -->
+    <section id="depts" class="odd highlights image-center featured right">
+        <div class="container short">
+            <div class="row text-center intro">
+                <div class="col-12">
+                    <h2>Departments</h2>
+                    <p>We have many departments, which all offer extra roleplay opportunities. In each department, you will have the opportunity to apply, gain knowledge, and traverse your way through the many ranks offered to you. Join our <a href="https://discord.gg/znW8vn8U3W" target="_blank">Department Hub</a> to learn more!</p>
+                </div>
+            </div>
+            <div class="container">
+  <div class="gradient-cards">
+    <div class="cardy">
+      <div class="containery-card">
+          <img width="80" height="80" viewBox="0 0 120 120" src="https://cdn.discordapp.com/attachments/1076031260146806794/1076031577928253520/1066830094913519637.png">
+          <p class="mobileH3 cardy-title">Trenton Police Department
+            <a href="https://discord.gg/tpd" target="_blank" class="cardy-icons1" data-title="TPD Discord Server"><i class="fab fa-discord" style="color: var(--primary-color);"></i></a>
+            <a href="http://apply.njroleplay.com/tpd" target="_blank" class="cardy-icons2" data-title="TPD Application"><i class="fa fa-user-pen" style="color: var(--primary-color);"></i></a>
+          </p>
+        <p class="cardy-description">Trenton Police Department's goal is to maintain a stable functioning community within Trenton. They vow to protect Trenton and its community. They offer a variety of subdivisions, including SWAT, as-well as high quality and realistic roleplay.</p>
+      </div>
+    </div>
+
+    <div class="cardy">
+      <div class="containery-card">
+          <img width="80" height="80" viewBox="0 0 120 120" src="https://cdn.discordapp.com/emojis/957719517952344104.png?v=1">
+        <p class="mobileH3 cardy-title">Mercer County Sheriffs Office
+            <a href="https://discord.gg/invite/eV4Bza8ceb" target="_blank" class="cardy-icons1" data-title="MCSO Discord Server"><i class="fab fa-discord" style="color: var(--primary-color);"></i></a>
+            <a href="http://apply.njroleplay.com/mcso" target="_blank" class="cardy-icons2" data-title="MCSO Application"><i class="fa fa-user-pen" style="color: var(--primary-color);"></i></a>
+          </p>
+        <p class="cardy-description">Here at Mercer County Sheriff's Office, we strive to be able to become one of the best Law Enforcement agencies out there! If you are looking to become a patrol officer in the county, you've stopped at a great place.</p>
+      </div>
+    </div>
+
+
+    <div class="cardy">
+      <div class="containery-card">
+          <img width="80" height="80" viewBox="0 0 120 120" src="https://cdn.discordapp.com/emojis/957714788618747975.png?v=1">
+        <p class="mobileH3 cardy-title">Trenton Fire Department
+            <a href="https://discord.gg/invite/7kgStQW7UW" target="_blank" class="cardy-icons1" data-title="TFD Discord Server"><i class="fab fa-discord" style="color: var(--primary-color);"></i></a>
+            <a href="http://apply.njroleplay.com/tfd" target="_blank" class="cardy-icons2" data-title="TFD Application"><i class="fa fa-user-pen" style="color: var(--primary-color);"></i></a>
+          </p>
+        <p class="cardy-description">Trenton Fire and Rescue aim to provide medical care, and fire rescue services. Their goal is to ensure the safety and well-being of Trenton's residents at all times.</p>
+      </div>
+    </div>
+    <div class="cardy">
+      <div class="containery-card">
+          <img width="80" height="80" viewBox="0 0 120 120" style="border-radius: 13px;" src="https://cdn.discordapp.com/attachments/1144452585709899786/1147391917500403783/a_5c2da12581888a79793c9a4ed5606cab.gif">
+        <p class="mobileH3 cardy-title">New Jersey State Police
+            <a href="https://discord.gg/invite/zNMCD9Jdjj" target="_blank" class="cardy-icons1" style="margin-top: 0px!important;font-size: 24px;" data-title="NJSP Discord Server"><i class="fab fa-discord" style="color: var(--primary-color);"></i></a>
+            <a href="https://apply.njroleplay.com/njsp" target="_blank" class="cardy-icons2" style="margin-top: 0px!important;font-size: 24px;" data-title="NJSP Application"><i class="fa fa-user-pen" style="color: var(--primary-color);"></i></a>
+          </p>
+        <p class="cardy-description">The New Jersey State Police is a law enforcement agency that performs a wide range of duties to ensure public safety, enforce laws, and provide various services to the citizens of New Jersey on various highways and roads.</p>
+      </div>
+    </div>
+      
+  </div>
+</div>
+    </section>
+    <!-- NJRP Stats -->
+    <section id="features" class="odd offers featured left">
+        <div class="container">
+            <div class="row intro">
+                <div class="col-12 col-md-9 align-self-center text-center text-md-left">
+                    <h2 class="featured">Our Stats</h2>
+                    <p>NJRP is a growing and active ER:LC Community with a dedicated staff team and tons custom game assets. View some of our stats below.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center text-center items">
+                <div class="col-12 col-md-6 col-lg-4 item">
+                    <div class="card no-hover">
+                        <i class="icon fa fa-user-shield" style="font-size: 44px;width: 55px;"></i>
+                        <h4>50+ Staff Members</h4>
+                        <p>We continue to look for more staff. You can apply <a href="https://apply.njroleplay.com/staff">here</a>.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 item">
+                    <div class="card no-hover">
+                        <i class="icon fa fa-chart-line"></i>
+                        <h4>9.7k+ Discord Members</h4>
+                        <p>And continuing to grow... <a href="https://discord.gg/njrp">Join!</a></p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 item">
+                    <div class="card no-hover">
+                        <i class="icon fa fa-layer-group"></i>
+                        <h4>100+ Custom Game Assets</h4>
+                        <p>A dedicated team to creating custom liveries and uniforms.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+    <!-- Contact -->
+    <section id="contacts" class="offers">
+        <div class="container">
+            <div class="row intro">
+                <div class="col-12 col-md-9 align-self-center text-center text-md-left">
+                    <h2 class="featured">Contact us</h2>
+                    <p>We are always here to assist you! There are various ways to contact us below.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center text-center items">
+                <div class="col-12 col-md-6 col-lg-4 item">
+                    <div class="card featured">
+                        <i class="icon fab fa-tiktok"></i>
+                        <h4>TikTok</h4>
+                        <p>Follow us on TikTok and send us your messages.</p>
+                        <a href="https://www.tiktok.com/@newjerseyrp.official" target="_blank"><i
+                                class="btn-icon icon-arrow-right-circle"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 item">
+                    <div class="card">
+                        <i class="icon fab fa-discord" aria-hidden="true" style="width: 55px;"></i>
+                        <h4>Discord</h4>
+                        <p>Join our Discord server and contact our staff there.</p>
+                        <a href="https://discord.gg/njrp" target="_blank"><i
+                                class="btn-icon icon-arrow-right-circle"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 item">
+                    <div class="card featured">
+                        <i class="icon icon-social-instagram"></i>
+                        <h4>Instagram</h4>
+                        <p>Follow us on Instagram and send us your messages.</p>
+                        <a href="https://www.instagram.com/newjerseyrp_official/" target="_blank"><i
+                                class="btn-icon icon-arrow-right-circle"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <!-- Footer [links] -->
+        <!-- Copyright -->
+        <section id="copyright" class="p-3 odd copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-12 p-3 text-center">
+                        <p>New Jersey State Roleplay Portal 2023 Made by <a href="https://discord.com/users/493081244792520714"
+                                target="_blank">@itssmax</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </footer>
+
+    <!-- Modal [responsive menu] -->
+    <div id="menu" class="p-0 modal fade" role="dialog" style="backdrop-filter: blur(10px) !important;" aria-labelledby="menu" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-slideout" role="document">
+            <div class="modal-content full">
+                <div class="modal-header" data-dismiss="modal">
+                    New Jersey State Roleplay <i class="icon-close"></i>
+                </div>
+                <div class="menu modal-body">
+                    <div class="row w-100">
+                        <div class="items p-0 col-12 text-center">
+                            <!-- Append [navbar] -->
+                        </div>
+                        <div class="contacts p-0 col-12 text-center">
+                            <!-- Append [navbar] -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll [to top] -->
+    <div id="scroll-to-top" class="scroll-to-top">
+        <a href="#slider" class="smooth-anchor">
+            <i class="icon-arrow-up"></i>
+        </a>
+    </div>
+
+    <!-- ==============================================
+        Vendor Scripts
+        =============================================== -->
+    <script src="assets/js/vendor/jquery.min.js"></script>
+    <script src="assets/js/vendor/jquery.easing.min.js"></script>
+    <script src="assets/js/vendor/ponyfill.min.js"></script>
+    <script src="assets/js/vendor/popper.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/js/vendor/slider.min.js"></script>
+    <script src="assets/js/vendor/gallery.min.js"></script>
+    <script src="assets/js/vendor/animation.min.js"></script>
+    <script src="../kit.fontawesome.com/86323babb4.js" crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
+</html>
