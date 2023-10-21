@@ -117,16 +117,7 @@ jQuery(function ($) {
         }
     })
 */
-    $(document).on('click', '.smooth-anchor', function (event) {
 
-        event.preventDefault();
-
-        $('html, body').animate({
-
-            scrollTop: $($.attr(this, 'href')).offset().top
-
-        }, 500);
-    })
 
     $('.dropdown-menu').each(function () {
 
